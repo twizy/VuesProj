@@ -10,7 +10,7 @@
 <div id="app">
     <section class="row">
         <div class="small-6 columns">
-            <h1 class="text-center">YOU</h1>
+            <h1 class="text-center">ME</h1>
             <div class="healthbar">
                 <div
                         class="healthbar text-center"
@@ -39,13 +39,13 @@
     </section>
     <section class="row controls" v-else>
         <div class="small-12 columns">
-            <button id="attack" @click="attack">ATTACK</button>
+            <button id="attack" @click="myAttack">ATTACK</button>
             <button id="special-attack" @click="specialAttack">SPECIAL ATTACK</button>
             <button id="heal" @click="heal">HEAL</button>
             <button id="give-up" @click="giveUp">GIVE UP</button>
         </div>
     </section>
-    <!-- <section class="row log" v-if="turns.length > 0">
+    <section class="row log" v-if="turns.length > 0">
         <div class="small-12 columns">
             <ul>
                 <li v-for="turn in turns"
@@ -54,7 +54,7 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 </div>
 <script src="app.js"></script>
 </body>
