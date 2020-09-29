@@ -8,6 +8,19 @@
     background-color: #eee;
     margin: auto;
     transition: width 500ms;
+    border-radius: 20px;
+}
+
+.healthbar #player-status{
+    color: rgb(194, 180, 180);
+    margin: auto;
+    transition: width 500ms;
+}
+
+.healthbar #monster-status{
+    color: rgb(194, 180, 180);
+    margin: auto;
+    transition: width 500ms;
 }
 
 .controls, .log {
@@ -38,11 +51,15 @@
 .log ul .player-turn {
     color: blue;
     background-color: #e4e8ff;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .log ul .monster-turn {
     color: red;
     background-color: #ffc0c1;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 button {
@@ -55,6 +72,8 @@ button {
 
 #start-game {
     background-color: #aaffb0;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 #start-game:hover {
@@ -63,6 +82,8 @@ button {
 
 #attack {
     background-color: #ff7367;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #attack:hover {
@@ -71,6 +92,8 @@ button {
 
 #special-attack {
     background-color: #ffaf4f;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #special-attack:hover {
@@ -79,6 +102,8 @@ button {
 
 #heal {
     background-color: #aaffb0;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #heal:hover {
@@ -87,8 +112,28 @@ button {
 
 #give-up {
     background-color: #ffffff;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #give-up:hover {
     background-color: #c7c7c7;
+}
+
+.down {
+    background-color: red;
+    margin: 0;
+    color: white;
+}
+
+.up {
+    background-color: green;
+    margin: 0;
+    color: white;
+}
+
+.middle {
+    background-color: rgb(164, 173, 76);
+    margin: 0;
+    color: white;
 }

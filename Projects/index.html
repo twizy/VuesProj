@@ -11,24 +11,28 @@
     <section class="row">
         <div class="small-6 columns">
             <h1 class="text-center">ME</h1>
-            <div class="healthbar">
+            <div class="healthbar text-center">
                 <div
                         class="healthbar text-center"
-                        style="background-color: green; margin: 0; color: white;"
+                        :class="{up:playerHealth > 50, middle:playerHealth == 50, down:playerHealth < 50}"
                         :style="{width: playerHealth + '%'}">
-                    {{ playerHealth }}
+                    {{ playerHealth }} <br>
+                    
                 </div>
+                <i id="player-status">{{ pStatus }}</i>
             </div>
         </div>
         <div class="small-6 columns">
             <h1 class="text-center">MONSTER</h1>
-            <div class="healthbar">
+            <div class="healthbar text-center">
                 <div
                         class="healthbar text-center"
-                        style="background-color: green; margin: 0; color: white;"
+                        :class="{up:monsterHealth > 50, middle:monsterHealth == 50, down:monsterHealth < 50}"
                         :style="{width: monsterHealth + '%'}">
-                    {{ monsterHealth }}
+                    {{ monsterHealth }} <br>
+                    
                 </div>
+                <i id="monster-status">{{ mStatus }}</i>
             </div>
         </div>
     </section>
