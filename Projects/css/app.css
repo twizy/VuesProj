@@ -121,13 +121,13 @@ button {
 }
 
 .down {
-    background-color: red;
+    background-color: blue;
     margin: 0;
     color: white;
 }
 
 .up {
-    background-color: green;
+    background-color: black;
     margin: 0;
     color: white;
 }
